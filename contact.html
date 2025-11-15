@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Tabriz Swift - Contact</title>
+  <link rel="stylesheet" href="contact.css" />
+</head>
+<body>
+
+<!-- Header -->
+<header>
+  <div class="logo">Tabriz Swift</div>
+  <nav class="main-nav">
+    <a href="index.html">Home</a>
+    <a href="products.html">Products</a>
+    <a href="login.html">Login</a>
+    <a href="contact.html" class="active">Contact</a>
+  </nav>
+  <div class="nav-actions">
+    <input type="search" placeholder="Search products..." class="search-input" />
+    <a href="cart.html" class="cart">Cart (0)</a>
+  </div>
+</header>
+
+<!-- Contact Section -->
+<section class="contact container">
+  <h2>Contact Us</h2>
+  <p>We’d love to hear from you! Send us a message and we’ll respond as soon as possible.</p>
+
+  <div class="contact-wrapper">
+    <!-- Contact Form -->
+    <form id="contact-form">
+      <label for="name">Name</label>
+      <input id="name" type="text" placeholder="Your name" required />
+
+      <label for="email">Email</label>
+      <input id="email" type="email" placeholder="you@example.com" required />
+
+      <label for="message">Message</label>
+      <textarea id="message" placeholder="Type your message here..." required></textarea>
+
+      <button type="submit" class="btn-cta">Send Message</button>
+    </form>
+
+    <!-- Contact Info -->
+    <div class="contact-info">
+      <h3>Our Info</h3>
+      <p><strong>Phone:</strong> 0687638633</p>
+      <p><strong>Email:</strong> info@tabrizswift.com</p>
+      <p><strong>Address:</strong>morroco.marrakech.mhamid 3 </p>
+    <p><strong>heure de travail:</strong>7/24</p>
+    <p><strong>nous produit sont guarantie avec un service aprés vente</strong></p>
+    </div>
+  </div>
+</section>
+
+<!-- Footer -->
+<footer>
+  <p>&copy; 2025 Tabriz Swift Electronics. All rights reserved.</p>
+</footer>
+
+<!-- JS for form alert -->
+<script>
+  document.getElementById('contact-form').onsubmit = e => {
+    e.preventDefault();
+    alert('Message sent! (functionality not implemented)');
+  };
+</script>
+
+</body>
+</html>

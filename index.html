@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Tabriz Swift Store</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+    <div class="logo">Tabriz Swift</div>
+    <nav>
+        <a href="index.html">Products</a>
+        <a href="login.html">Login</a>
+        <a href="contact.html">Contact</a>
+        <span class="cart">🛒 Cart: <span id="cart-counter">0</span></span>
+    </nav>
+</header>
+
+<section class="hero">
+    <h1>Top Electronics & TV Devices</h1>
+    <p>TV Receivers, TV Boxes, Antennas, Accessories & More</p>
+</section>
+
+<section class="sort-section">
+    <label for="sort">Sort by:</label>
+    <select id="sort" onchange="sortProducts()">
+        <option value="default">Default</option>
+        <option value="asc">Prix croissant</option>
+        <option value="desc">Prix decroissant </option>
+    </select>
+</section>
+
+<section class="best-sellers">
+    <h2>🔥 Best Sellers</h2>
+    <div class="products" id="best-sellers">
+        <!-- Best seller cards -->
+        <div class="card" data-price="599.99">
+            <img src="c:/Users/PC/Pictures/anybox-x6-mini-tv-box-150x210.jpeg" alt="AnyBox X6 Mini">
+            <h3>AnyBox X6 Mini</h3>
+            <p class="price">599.99 dh</p>
+            <a href="https://wa.me/212687638633?text=Hello,%20I%20want%20to%20order%20AnyBox%20X6%20Mini" class="whatsapp-btn">whatsapp to buy</a>
+        </div>
+        <div class="card" data-price="179.99">
+            <img src="c:\Users\PC\Pictures\Oraimo-True-Wireless-Earbuds-SpaceBuds-Air-OTW-324S-FREEFIRE-6-Free-Fire-Collaboration6-FR.webp" alt="Oraimo EarPods">
+            <h3>Oraimo EarPods</h3>
+            <p class="price">179.99 dh</p>
+            <a href="https://wa.me/212687638633?text=Hello,%20I%20want%20to%20order%20Oraimo%20EarPods" class="whatsapp-btn">whatsapp to buy</a>
+        </div>
+        <div class="card" data-price="199.99">
+            <img src="c:\Users\PC\Pictures\unnamed.jpg" alt="TV Box X1">
+            <h3>winkstar silver </h3>
+            <p class="price">229.99dh </p>
+            <a href="https://wa.me/212687638633?text=Hello,%20I%20want%20to%20order%20TV%20Box%20X1" class="whatsapp-btn">whatsapp to buy</a>
+        </div>
+    </div>
+</section>
+
+<section class="products" id="product-list">
+    <!-- All products -->
+    <div class="card" data-price="299.99">
+        <img src="c:/Users/PC/Pictures/3-10.png.webp" alt="Comet 5">
+        <h3>Comet 5</h3>
+        <p class="price">299.99 dh</p>
+        <a href="https://wa.me/212687638633?text=Hello,%20I%20want%20to%20order%20Comet%205" class="whatsapp-btn">whatsapp to buy</a>
+    </div>
+    <div class="card" data-price="99.99">
+        <img src="c:\Users\PC\Pictures\71zU+DNvNrL._AC_SL1500_.jpg" alt="TV Box Ultra">
+        <h3>cable hdmi 1.5m to 30 m </h3>
+        <p class="price">19.99dh to 149.99dh</p>
+        <a href="https://wa.me/212687638633?text=Hello,%20I%20want%20to%20order%20TV%20Box%20Ultra" class="whatsapp-btn">whatsapp to buy</a>
+    </div>
+    <div class="card" data-price="99.99">
+        <img src="c:\Users\PC\Pictures\cable-rj45-1200x1018.jpg" alt="TV Receiver Pro">
+        <h3>cable rg45 1.5m to 30 m </h3>
+        <p class="price">19.99dh to 149.99 dh</p>
+        <a href="https://wa.me/212687638633?text=Hello,%20I%20want%20to%20order%20TV%20Receiver%20Pro" class="whatsapp-btn">whatsapp to buy</a>
+    </div>
+    <div class="card" data-price="69.99">
+        <img src="c:\Users\PC\Pictures\The_Most_common_types_of_Remote_Control.webp" alt="HD Receiver">
+        <h3>ALL remote receirver</h3>
+        <p class="price">19.99 dh</p>
+        <a href="https://wa.me/212687638633?text=Hello,%20I%20want%20to%20order%20HD%20Receiver" class="whatsapp-btn">whatsapp to buy</a>
+    </div>
+    <div class="card" data-price="29.99">
+        <img src="c:\Users\PC\Pictures\vector-collection-remotes-tvs-other-media-devices_195186-221.avif" alt="Digital Antenna">
+        <h3>ALL tv remote</h3>
+        <p class="price">29.99 dh</p>
+        <a href="https://wa.me/212687638633?text=Hello,%20I%20want%20to%20order%20Digital%20Antenna" class="whatsapp-btn">whatsapp to buy</a>
+    </div>
+    <div class="card" data-price="0">
+        <img src="c:\Users\PC\Pictures\2_18.jpg" alt="Smart Remote">
+        <h3>support mobile TV 24 pouces to 80pouces</h3>
+        <p class="price">99.99 dh to 399.99 dh</p>
+        <a href="https://wa.me/212687638633?text=Hello,%20I%20want%20to%20order%20Smart%20Remote" class="whatsapp-btn">whatsapp to buy</a>
+    </div>
+    <div class="card" data-price="0">
+        <img src="c:\Users\PC\Pictures\1.jpg" alt="Smart Remote">
+        <h3>support fix TV 24 pouces to 80pouces</h3>
+        <p class="price">39.99 dh to 149.99 dh</p>
+        <a href="https://wa.me/212687638633?text=Hello,%20I%20want%20to%20order%20Smart%20Remote" class="whatsapp-btn">whatsapp to buy</a>
+    </div>
+    <div class="card" data-price="0">
+        <img src="c:\Users\PC\Pictures\T4RIcAGGvHsDkNPFXUXiiMwljgvw2qC7W5KYx3SP.png" alt="Smart Remote">
+        <h3>moi i66 pro</h3>
+        <p class="price">129.99 dh</p>
+        <a href="https://wa.me/212687638633?text=Hello,%20I%20want%20to%20order%20Smart%20Remote" class="whatsapp-btn">whatsapp to buy</a>
+    </div>
+    <div class="card" data-price="0">
+        <img src="c:\Users\PC\Pictures\apple-airpods-4-with-anc-review-291806497-1x1.webp" alt="Smart Remote">
+        <h3>airpods 4</h3>
+        <p class="price">129.99 dh</p>
+        <a href="https://wa.me/212687638633?text=Hello,%20I%20want%20to%20order%20Smart%20Remote" class="whatsapp-btn">whatsapp to buy</a>
+    </div>
+    <div class="card" data-price="0">
+        <img src="c:\Users\PC\Pictures\T800-Ultra2-mp4.webp" alt="Smart Remote">
+        <h3>smart watch T800 ultra </h3>
+        <p class="price">99.99 dh</p>
+        <a href="https://wa.me/212687638633?text=Hello,%20I%20want%20to%20order%20Smart%20Remote" class="whatsapp-btn">whatsapp to buy</a>
+    </div>
+     <div class="card" data-price="0">
+        <img src="c:\Users\PC\Pictures\1 (1).jpg" alt="Smart Remote">
+        <h3>earpods m10 </h3>
+        <p class="price">49.99 dh</p>
+        <a href="https://wa.me/212687638633?text=Hello,%20I%20want%20to%20order%20Smart%20Remote" class="whatsapp-btn">whatsapp to buy</a>
+    </div>
+    <div class="card" data-price="0">
+        <img src="c:\Users\PC\Pictures\65a9d4f8d4675.jpg" alt="Smart Remote">
+        <h3>wirless routeur up to 14 hours </h3>
+        <p class="price">249.99 dh</p>
+        <a href="https://wa.me/212687638633?text=Hello,%20I%20want%20to%20order%20Smart%20Remote" class="whatsapp-btn">whatsapp to buy</a>
+    </div>
+    <div class="card" data-price="0">
+        <img src="c:\Users\PC\Pictures\618klqnYCGL._AC_SL1500_.jpg" alt="Smart Remote">
+        <h3>led projector </h3>
+        <p class="price">249.99 dh</p>
+        <a href="https://wa.me/212687638633?text=Hello,%20I%20want%20to%20order%20Smart%20Remote" class="whatsapp-btn">whatsapp to buy</a>
+    </div>
+</section>
+
+<section class="pagination" id="pagination">
+    <!-- Pagination buttons can be generated by JS -->
+</section>
+
+<footer>
+    <p>© 2025 Tabriz Swift Electronics. All rights reserved.</p>
+</footer>
+
+</body>
+</html>

@@ -1,0 +1,154 @@
+/* Reset and base */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}
+
+body {
+  background: #f2f2f2;
+  color: #333;
+  line-height: 1.6;
+  min-height: 100vh;
+}
+
+/* Header */
+.site-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 50px;
+  background: #fff;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.site-header .logo {
+  font-size: 1.8rem;
+  font-weight: 700;
+  color: #222;
+}
+
+.main-nav a {
+  margin-left: 25px;
+  text-decoration: none;
+  color: #555;
+  font-weight: 500;
+  transition: color 0.3s;
+}
+
+.main-nav a:hover {
+  color: #e6683c;
+}
+
+.main-nav a.active {
+  color: #e6683c;
+  font-weight: 700;
+}
+
+/* Login Wrapper */
+.login-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 80px 20px;
+}
+
+/* Login Card */
+.login-card {
+  background: #fff;
+  border-radius: 12px;
+  padding: 50px 35px;
+  width: 100%;
+  max-width: 400px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+  text-align: center;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.login-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 15px 30px rgba(0,0,0,0.15);
+}
+
+.login-card h2 {
+  font-size: 2rem;
+  margin-bottom: 10px;
+  color: #222;
+}
+
+.sub-text {
+  font-size: 0.95rem;
+  margin-bottom: 30px;
+  color: #777;
+}
+
+/* Form Styling */
+.login-card form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.login-card input {
+  padding: 14px 15px;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  outline: none;
+  transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+.login-card input:focus {
+  border-color: #e6683c;
+  box-shadow: 0 0 5px rgba(230,104,60,0.3);
+}
+
+/* Buttons */
+.login-card button {
+  padding: 14px 0;
+  background: linear-gradient(135deg, #f09433, #e6683c, #dc2743);
+  border: none;
+  border-radius: 8px;
+  color: #fff;
+  font-weight: bold;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: opacity 0.3s, transform 0.3s;
+}
+
+.login-card button:hover {
+  opacity: 0.9;
+  transform: translateY(-2px);
+}
+
+/* Sign up text */
+.signup-text {
+  margin-top: 25px;
+  font-size: 0.9rem;
+  color: #555;
+}
+
+.signup-text a {
+  color: #e6683c;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.signup-text a:hover {
+  text-decoration: underline;
+}
+
+/* Responsive */
+@media (max-width: 500px) {
+  .login-card {
+    padding: 35px 25px;
+  }
+
+  .site-header {
+    padding: 15px 20px;
+  }
+}
